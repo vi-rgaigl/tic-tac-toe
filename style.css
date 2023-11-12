@@ -1,0 +1,86 @@
+body {
+    background-color: #323232;
+    font-family: 'OpenSans', sans-serif;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 64px;
+    text-align: center;
+}
+
+#content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 64px;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+td:first-child {
+    border-left: 0; /* Entferne die Border an der linken Seite der ersten Zelle */
+}
+
+td:last-child {
+    border-right: 0; /* Entferne die Border an der rechten Seite der letzten Zelle */
+}
+
+tr:first-child td {
+    border-top: 0; /* Entferne die Border an der oberen Seite der ersten Zeile */
+}
+
+tr:last-child td {
+    border-bottom: 0; /* Entferne die Border an der unteren Seite der letzten Zeile */
+}
+
+td:hover {
+    background-color: #696868;
+}
+
+.winner-cell {
+    position: relative;
+}
+
+.winning-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 80px;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
